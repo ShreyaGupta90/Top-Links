@@ -68,7 +68,7 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Original link colors */
+        /* Retaining the original link colors */
         .top-link:nth-child(1) {
             background-color: #f5c7d7; /* Light pink */
         }
@@ -136,18 +136,18 @@
             opacity: 1;
         }
 
-        /* Mobile responsiveness */
+        /* Media query for mobile responsiveness */
         @media (max-width: 600px) {
             #top-links {
                 padding: 20px;
             }
 
             .links-container {
-                grid-template-columns: 1fr; /* Stack links vertically */
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             }
 
             .top-link {
-                max-width: 100%; /* Allow links to take full width */
+                max-width: 180px;
             }
 
             .link-icon {
@@ -197,3 +197,4 @@
     </section>
 </body>
 </html>
+
