@@ -1,1 +1,200 @@
 # Top-Links
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Links Section</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* White background color */
+            color: #34495E; /* Dark text color for contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Styling for the top-links section */
+        #top-links {
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            border-radius: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 800px;
+            margin: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Heading Styling */
+        #top-links h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+            color: #000000; /* Dark black color for the heading */
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Container for the link items */
+        .links-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        /* Styling for each link */
+        .top-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #4a4a4a;
+            padding: 20px;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 220px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Retaining the original link colors */
+        .top-link:nth-child(1) {
+            background-color: #f5c7d7; /* Light pink */
+        }
+
+        .top-link:nth-child(2) {
+            background-color: #d0e9a0; /* Light green */
+        }
+
+        .top-link:nth-child(3) {
+            background-color: #f1e5a1; /* Light yellow */
+        }
+
+        .top-link:nth-child(4) {
+            background-color: #c2e4f2; /* Light blue */
+        }
+
+        /* Hover effect for the links */
+        .top-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Icon Styling */
+        .link-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+            transition: transform 0.4s ease;
+        }
+
+        /* Hover effect for the icons */
+        .top-link:hover .link-icon {
+            transform: rotate(360deg);
+        }
+
+        /* Text inside the link */
+        .top-link span {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            color: #34495E;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover effect for the text */
+        .top-link:hover span {
+            color: #2c3e50; /* Darker text color on hover */
+        }
+
+        /* Flower Decoration */
+        .flower-decor {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 30px;
+            height: 30px;
+            background: url('https://www.svgrepo.com/show/169307/flower.svg') no-repeat center center;
+            background-size: contain;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Flower opacity on hover */
+        .top-link:hover .flower-decor {
+            opacity: 1;
+        }
+
+        /* Media query for mobile responsiveness */
+        @media (max-width: 600px) {
+            #top-links {
+                padding: 20px;
+            }
+
+            .links-container {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .top-link {
+                max-width: 180px;
+            }
+
+            .link-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .top-link span {
+                font-size: 14px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section id="top-links">
+        <h2>Top Links</h2> <!-- Changed heading text to "Top Links" -->
+        <div class="links-container">
+            <!-- GitHub Profile Link -->
+            <a href="https://github.com/ShreyaGupta90" class="top-link">
+                <div class="flower-decor"></div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png" alt="GitHub Profile" class="link-icon">
+                <span>GITHUB PROFILE</span>
+            </a>
+
+            <!-- CodeChef Profile Link -->
+            <a href="https://www.codechef.com/users/colony_feat_48" class="top-link">
+                <div class="flower-decor"></div>
+                <img src="https://img.icons8.com/?size=100&id=4z2zrIWYmGqx&format=png&color=4D4D4D" alt="Codechef Profile" class="link-icon">
+                <span>CODECHEF PROFILE</span>
+            </a>
+
+            <!-- Coding Ninjas Profile Link -->
+            <a href="https://www.naukri.com/code360/profile/8f7526dd-f810-4e40-b877-a200767d1c52" class="top-link">
+                <div class="flower-decor"></div>
+                <img src="https://www.svgrepo.com/show/330198/codingninjas.svg" alt="Coding Ninjas Profile" class="link-icon">
+                <span>CODING NINJAS PROFILE</span>
+            </a>
+
+            <!-- Google Cloud Profile Link -->
+            <a href="https://www.cloudskillsboost.google/public_profiles/285100fa-d7a7-4e50-ba3c-112be44d3098" class="top-link">
+                <div class="flower-decor"></div>
+                <img src="https://banner2.cleanpng.com/20190612/vok/kisspng-cloud-computing-google-cloud-platform-cloud-storag-google-cloud-logo-png-image-free-download-searchpn-1713887351272.webp" alt="Google Cloud Profile" class="link-icon">
+                <span>GOOGLE CLOUD PROFILE</span>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
