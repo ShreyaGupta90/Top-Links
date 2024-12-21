@@ -10,8 +10,8 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #2C3E50; /* Static contrast background color */
-            color: #ecf0f1; /* Light text color for contrast */
+            background-color: #ffffff; /* White background color */
+            color: #34495E; /* Dark text color for contrast */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -37,7 +37,7 @@
         #top-links h2 {
             font-size: 32px;
             margin-bottom: 25px;
-            color: #34495E; /* Darker shade for contrast */
+            color: #34495E;
             text-transform: uppercase;
             font-weight: 600;
             letter-spacing: 2px;
@@ -68,7 +68,7 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Retaining the original link colors */
+        /* Original link colors */
         .top-link:nth-child(1) {
             background-color: #f5c7d7; /* Light pink */
         }
@@ -109,7 +109,7 @@
             font-size: 16px;
             font-weight: bold;
             text-align: center;
-            color: #34495E; /* Darker color for contrast */
+            color: #34495E;
             transition: color 0.3s ease;
         }
 
@@ -136,18 +136,18 @@
             opacity: 1;
         }
 
-        /* Media query for mobile responsiveness */
+        /* Mobile responsiveness */
         @media (max-width: 600px) {
             #top-links {
                 padding: 20px;
             }
 
             .links-container {
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                grid-template-columns: 1fr; /* Stack links vertically */
             }
 
             .top-link {
-                max-width: 180px;
+                max-width: 100%; /* Allow links to take full width */
             }
 
             .link-icon {
