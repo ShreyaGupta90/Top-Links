@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Links Section</title>
+  <style>
+    /* General Body Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    /* Styling for the top-links section */
+    #top-links {
+      padding: 30px;
+      background-color: #ffffff;
+      text-align: center;
+      border-radius: 10px;
+      margin: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Heading Styling */
+    #top-links h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Container for the link items */
+    .links-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    /* Styling for each link */
+    .top-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      background-color: #e7f5ff;
+      padding: 20px;
+      border-radius: 15px;
+      width: 150px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    }
+
+    /* Hover effect for the links */
+    .top-link:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      background-color: #cce7ff;
+    }
+
+    /* Icon Styling */
+    .link-icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    /* Hover effect for the icons */
+    .top-link:hover .link-icon {
+      transform: rotate(360deg);
+    }
+
+    /* Text inside the link */
+    .top-link span {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    }
+
+    /* Media query for mobile responsiveness */
+    @media (max-width: 600px) {
+      .links-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .link-icon {
+        width: 50px;
+        height: 50px;
+      }
+
+      .top-link span {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id="top-links">
+    <h2>Top Links</h2>
+    <div class="links-container">
+      <!-- GitHub Profile Link -->
+      <a href="https://github.com/ShreyaGupta90" class="top-link">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png" alt="GitHub Profile" class="link-icon">
+        <span>GITHUB PROFILE</span>
+      </a>
+
+      <!-- CodeChef Profile Link -->
+      <a href="https://www.codechef.com/users/colony_feat_48" class="top-link">
+        <img src="https://img.icons8.com/?size=100&id=4z2zrIWYmGqx&format=png&color=4D4D4D" alt="Codechef Profile" class="link-icon">
+        <span>CODECHEF PROFILE</span>
+      </a>
+
+      <!-- Coding Ninjas Profile Link -->
+      <a href="https://www.naukri.com/code360/profile/8f7526dd-f810-4e40-b877-a200767d1c52" class="top-link">
+        <img src="https://www.svgrepo.com/show/330198/codingninjas.svg" alt="Coding Ninjas Profile" class="link-icon">
+        <span>CODING NINJAS PROFILE</span>
+      </a>
+
+      <!-- Google Cloud Profile Link -->
+      <a href="https://www.cloudskillsboost.google/public_profiles/285100fa-d7a7-4e50-ba3c-112be44d3098" class="top-link">
+        <img src="https://banner2.cleanpng.com/20190612/vok/kisspng-cloud-computing-google-cloud-platform-cloud-storag-google-cloud-logo-png-image-free-download-searchpn-1713887351272.webp" alt="Google Cloud Profile" class="link-icon">
+        <span>GOOGLE CLOUD PROFILE</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Script for hover effects (Optional if you want to manage background color change more dynamically) -->
+  <script>
+    document.querySelectorAll('.top-link').forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        link.style.backgroundColor = '#cce7ff';
+      });
+      link.addEventListener('mouseleave', () => {
+        link.style.backgroundColor = '#e7f5ff';
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Links Section</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    #top-links {
+      padding: 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    #top-links h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .links-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .top-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .top-link:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      background-color: #f0f0f0;
+    }
+
+    .link-icon {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    .top-link span {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .links-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .link-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .top-link span {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id="top-links">
+    <h2>Top Links</h2>
+    <div class="links-container">
+      <a href="https://github.com/ShreyaGupta90" class="top-link">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png" alt="GitHub Profile" class="link-icon">
+        <span>GITHUB PROFILE</span>
+      </a>
+      <a href="https://www.codechef.com/users/colony_feat_48" class="top-link">
+        <img src="https://img.icons8.com/?size=100&id=4z2zrIWYmGqx&format=png&color=4D4D4D" alt="Codechef Profile" class="link-icon">
+        <span>CODECHEF PROFILE</span>
+      </a>
+      <a href="https://www.naukri.com/code360/profile/8f7526dd-f810-4e40-b877-a200767d1c52" class="top-link">
+        <img src="https://www.svgrepo.com/show/330198/codingninjas.svg" alt="Coding Ninjas Profile" class="link-icon">
+        <span>CODING NINJAS PROFILE</span>
+      </a>
+      <a href="https://www.cloudskillsboost.google/public_profiles/285100fa-d7a7-4e50-ba3c-112be44d3098" class="top-link">
+        <img src="https://banner2.cleanpng.com/20190612/vok/kisspng-cloud-computing-google-cloud-platform-cloud-storag-google-cloud-logo-png-image-free-download-searchpn-1713887351272.webp" alt="Google Cloud Profile" class="link-icon">
+        <span>GOOGLE CLOUD PROFILE</span>
+      </a>
+    </div>
+  </section>
+  <script>
+    document.querySelectorAll('.top-link').forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        link.style.backgroundColor = '#e0e0e0';
+      });
+      link.addEventListener('mouseleave', () => {
+        link.style.backgroundColor = 'transparent';
+      });
+    });
+  </script>
+</body>
+</html> -->
