@@ -7,11 +7,16 @@
   <style>
     /* General Body Styling */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f0f8ff;
       color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
     }
 
     /* Styling for the top-links section */
@@ -19,27 +24,29 @@
       padding: 30px;
       background-color: #ffffff;
       text-align: center;
-      border-radius: 10px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 900px;
       margin: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     /* Heading Styling */
     #top-links h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
+      font-size: 32px;
+      margin-bottom: 25px;
       color: #333;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
+      font-weight: 600;
     }
 
     /* Container for the link items */
     .links-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      justify-items: center;
     }
 
     /* Styling for each link */
@@ -50,16 +57,17 @@
       text-decoration: none;
       color: #333;
       background-color: #e7f5ff;
-      padding: 20px;
+      padding: 25px;
       border-radius: 15px;
-      width: 150px;
+      width: 100%;
+      max-width: 250px;
       transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     }
 
     /* Hover effect for the links */
     .top-link:hover {
-      transform: scale(1.1);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
       background-color: #cce7ff;
     }
 
@@ -68,7 +76,7 @@
       width: 60px;
       height: 60px;
       margin-bottom: 15px;
-      transition: transform 0.3s ease;
+      transition: transform 0.4s ease;
     }
 
     /* Hover effect for the icons */
@@ -78,17 +86,30 @@
 
     /* Text inside the link */
     .top-link span {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bold;
       color: #333;
       text-align: center;
+      transition: color 0.3s ease;
+    }
+
+    /* Hover effect for the text */
+    .top-link:hover span {
+      color: #0077b6;
     }
 
     /* Media query for mobile responsiveness */
     @media (max-width: 600px) {
+      #top-links {
+        padding: 20px;
+      }
+
       .links-container {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      .top-link {
+        max-width: 200px;
       }
 
       .link-icon {
@@ -97,7 +118,7 @@
       }
 
       .top-link span {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
   </style>
