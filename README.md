@@ -17,3 +17,10 @@ This section contains a list of my top links. You can click on each link to visi
 
 The list above represents the links to my profiles. You can follow them to know more about my work, skills, and contributions across different platforms.
 
+## 📩 Contact & Contribution
+
+For contributions, feedback, or collaborations, feel free to reach out:  
+- **Author:** Shreya Gupta
+- **Email:** shreyagupta119809@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/shreya-gupta-2a6a292ab
+
